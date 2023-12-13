@@ -1,3 +1,11 @@
+""" Dijkstra's Algorithm:
+    Dijkstra's Algorithm is a Breadth First Search (BFS) algorithm but instead of doing regular
+    queue where we are going to use a priority queue aka MinHeap.
+    
+    In shortestPath method:
+    Initialize MinHeap to [0, src] which means from the source node what is the total distance it
+    is going to reach the source node that is zero, and src is the node at that like distance. """
+
 import heapq
 
 class Dijkstra:
@@ -7,9 +15,6 @@ class Dijkstra:
 
     def shortestPath(self):
         shortest = {}    # Map vertex to distance of the shortest path
-        """ Initialize MinHeap to [0, src] which means from the source node
-            what is the total distance it is going to reach the source node that is zero,
-            and src is the node at that like distance. """
         minHeap = [[0, self.src]]     # first value is weight (here is our distance), and second is node.
         ### BFS ###
         while minHeap:      # when minHeap is not empty
