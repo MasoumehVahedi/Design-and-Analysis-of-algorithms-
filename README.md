@@ -3,7 +3,7 @@ In this repository, I implemented some important algorithms, including:
 
 ### Greedy algorithms
 
-#### 2- Kruskal's Algorithm
+#### 1- Kruskal's Algorithm
 
 Kruskal’s algorithm is a greedy algorithm which all edges of a graph are sorted in increasing order. After that, new edges and nodes are added provided that there is no forming a cycle in MST. Each edge is selected based on their minimum weighted. As a result, it chooses an optimal solution locally at each step. 
 
